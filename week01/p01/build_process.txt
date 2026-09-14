@@ -1,0 +1,11 @@
+# Preprocessing
+gcc -E -o hello.i hello.c -m32 -Wall
+
+# Compilation
+gcc -S -o hello.s hello.i -m32 -Wall
+
+# Assembling
+gcc -c -o hello.o hello.s -m32 -Wall
+
+# Linking
+gcc -o hello hello.o -m32 -Wall
